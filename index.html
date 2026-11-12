@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glowing Card</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+  body {
+    background: #0f0f1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    width: 300px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 30px #6a11cb;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #2575fc;
+  }
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+    background: white;
+    color: #6a11cb;
+    font-size: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+  }
+
+  h2 { font-size: 22px; margin-bottom: 5px; }
+  p { font-size: 14px; opacity: 0.8; margin-bottom: 18px; }
+
+  button {
+    background: white;
+    color: #6a11cb;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  button:hover { background: #ffdd00; color: black; }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="avatar">😎</div>
+    <h2>Alex Kamau</h2>
+    <p>Web Developer | Nairobi, Kenya</p>
+    <button>Follow Me</button>
+  </div>
+
+</body>
+</html>
